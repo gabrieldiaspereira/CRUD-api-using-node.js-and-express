@@ -41,7 +41,7 @@ function checkUserinArray(req, res, next) {
   return next();
 }
 //retorna todos usuarios
-server.get("/users", checkUserinArray, (req, res) => {
+server.get("/users", (req, res) => {
   return res.json(users);
 });
 //retorna um usuarios
